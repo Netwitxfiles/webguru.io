@@ -5,10 +5,11 @@ import Image from 'next/image'
 export function Hero() {
   return (
     <div className="relative overflow-hidden bg-[#006B5E]">
-      <div className="absolute right-0 top-0 h-full w-1/2 bg-dots-pattern" />
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="absolute inset-0 bg-dots-pattern opacity-10" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-dots-pattern-large opacity-30" />
+      <div className="relative mx-auto max-w-7xl px-6 pt-16 lg:px-8 lg:pt-0">
         <div className="flex min-h-screen flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <div className="relative z-10 mx-auto max-w-2xl lg:mx-0 lg:max-w-none pt-24 lg:pt-0">
+          <div className="relative z-10 mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:pt-24 px-4 sm:px-6 lg:px-0">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Digital Creating Trends Lead the Changes
             </h1>
@@ -16,7 +17,7 @@ export function Hero() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy eirmod tempor incidunt ut labore et dolore magna aliquypsum erat, sed diam voluptua.
             </p>
             <div className="mt-8">
-              <Button variant="secondary" className="group">
+              <Button variant="default" className="group bg-white border border-green-600 text-[#006B5E] hover:bg-white/90 rounded-tr-2xl rounded-bl-2xl">
                 See all case
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
@@ -35,8 +36,8 @@ export function Hero() {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-white" style={{
-        borderTopLeftRadius: '100% 100%',
-        borderTopRightRadius: '100% 100%',
+        borderTopLeftRadius: '50% 100%',
+        borderTopRightRadius: '50% 100%',
       }} />
     </div>
   )

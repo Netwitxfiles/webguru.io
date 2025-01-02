@@ -19,7 +19,7 @@ export function Features() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy eirmod tempor incidunt ut labore et dolore magna aliquypsum erat.
               </p>
               <div className="mt-8">
-                <Button className="group">
+                <Button className="group rounded-tr-2xl rounded-bl-2xl">
                   Find out more
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
